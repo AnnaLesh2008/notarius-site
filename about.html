@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+    --primary-color: #133C70;
+    --secondary-color: #36221E;
+    --accent-color: #FFD4B2;
+    --light-bg: #FFF7EF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #FFFFFF;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка (адаптивная) */
+.header {
+    background-color: var(--accent-color);
+    padding: 15px 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo-img img {
+    max-height: 80px;
+    width: auto;
+}
+
+.phone-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+/* Основной блок (адаптивный) */
+.main-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.main-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.main-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
+
+.main-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.text-m {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.main-name {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 48px;
+}
+
+/* Футер (адаптивный) */
+.footer {
+    background-color: var(--accent-color);
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+.footer-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.footer-menu a:hover {
+    color: #0a2752;
+}
+
+/* Адаптация под планшеты (768px) */
+@media (max-width: 768px) {
+    .header-nav {
+        justify-content: center;
+    }
+
+    .main-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-m {
+        font-size: 28px;
+    }
+
+    .main-name {
+        font-size: 36px;
+    }
+
+    .footer-menu {
+        gap: 15px;
+    }
+}
+
+/* Адаптация под мобильные (480px) */
+@media (max-width: 480px) {
+    .phone-link {
+        font-size: 18px;
+    }
+
+    .text-m {
+        font-size: 22px;
+    }
+
+    .main-name {
+        font-size: 28px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-menu a {
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav container">
+            <div class="logo">
+                <a href="index.html" class="logo-img"><img src="pngtree-notary-law-logo-png-image_868690 1.png" alt="Логотип нотариуса"></a>
+            </div>
+            <div class="phone">
+                <a class="phone-link" href="tel:+7(999)999-99-99">+7 (999) 999-99-99</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div>
+        <div class="main-block">
+            <div class="main-img">
+                <img src="image 2 (1).png" alt="">
+            </div>
+            <div class="main-text">
+                <h3 class="text-m">Я, <span class="main-name">Соколов Александр Дмитриевич</span>, нотариус с 10-летним стажем. Заверю, подпишу, скреплю. Быстро, дорого, но официально</h3>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <nav class="container footer-nav">
+            <ul>
+                <li><a href="price.html">Услуги</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="about.html">О себе</a></li>
+                <li><a href="form.html">Запись</a></li>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
